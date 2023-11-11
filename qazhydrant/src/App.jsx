@@ -7,10 +7,11 @@ import Traits from "./components/Traits";
 import About from "./components/About";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+
 function App() {
   return (
-    <div>
-      <div className="bg-[url('/images/firefighters-bg.png')] bg-cover h-screen">
+    <div className="flex flex-col min-h-screen">
+      <div className="bg-[url('/images/firefighters-bg.png')] bg-cover bg-center bg-no-repeat h-auto md:h-screen">
         <Header />
         <Hero />
       </div>

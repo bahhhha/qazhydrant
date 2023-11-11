@@ -21,15 +21,15 @@ const traits = [
 
 const Trait = ({ trait }) => {
   return (
-    <div className="group flex flex-col border-2 duration-150 hover:shadow-xl border-white rounded-2xl shadow-sm p-5 items-center text-center text-white w-64 gap-4 hover:bg-white hover:border-main">
+    <div className="group flex flex-col m-4 border-2 duration-150 hover:shadow-xl border-white rounded-2xl shadow-sm p-5 items-center text-center text-white w-72 gap-4 hover:bg-white hover:border-main">
       <img
         src={trait.img}
-        className="w-24 filter invert brightness-0 group-hover:brightness-100 group-hover:invert-0"
+        className="w-16 sm:w-24 filter invert brightness-0 group-hover:brightness-100 group-hover:invert-0"
       />
-      <p className="font-bold tracking-wide	 text-2xl text-white group-hover:text-main">
+      <p className="font-bold tracking-wide text-xl sm:text-2xl text-white group-hover:text-main">
         {trait.name}
       </p>
-      <p className="text-left text-md font-light group-hover:text-main">
+      <p className="text-center text-sm sm:text-md font-light group-hover:text-main">
         {trait.description}
       </p>
     </div>
@@ -37,12 +37,11 @@ const Trait = ({ trait }) => {
 };
 
 const Traits = () => {
-  const traitsToShow = traits.map((trait) => {
-    return <Trait trait={trait} />;
-  });
   return (
-    <div className="flex w-full aboutbg flex-row justify-center gap-24 py-16">
-      {traitsToShow}
+    <div className="flex flex-wrap justify-center items-center  aboutbg gap-4 sm:gap-24 py-8 sm:py-16 px-4">
+      {traits.map((trait) => (
+        <Trait key={trait.name} trait={trait} />
+      ))}
     </div>
   );
 };

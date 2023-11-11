@@ -1,14 +1,14 @@
 const Header = () => {
   return (
     <div
-      className="flex justify-around items-center w-[720px] m-auto py-6"
+      className="flex flex-wrap justify-around items-center w-full max-w-2xl m-auto py-6 px-4"
       id="header"
     >
-      <div className="flex items-center">
+      <div className="flex items-center justify-center w-full sm:w-auto">
         <img src="/graphic/logo.png" className="h-10" />
       </div>
 
-      <div className="flex gap-16 text-white">
+      <div className="flex justify-center items-center w-full sm:w-auto sm:flex-nowrap gap-4 sm:gap-16 text-white mt-4 sm:mt-0">
         <a
           href="#howtouse"
           className="font-medium duration-150 hover:text-gray-300"
