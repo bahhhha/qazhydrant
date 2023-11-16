@@ -20,9 +20,10 @@ function App() {
           autoPlay
           loop
           muted
+          poster="images/poster.png"
           className="relative w-full h-full object-cover"
         >
-          <source src="/videos/hero-video.mp4" type="video/mp4" />
+          <source src="/videos/hero-video.webm" type="video/mp4" />
         </video>
         <img
           src="/graphic/overlay.png"
