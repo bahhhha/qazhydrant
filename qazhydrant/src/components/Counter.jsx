@@ -23,9 +23,9 @@ const Counter = () => {
   };
 
   return (
-    <div className="flex justify-center counterbg mt-5 p-10 space-x-16 ">
+    <div className="flex justify-center counterbg pb-12 space-x-16 ">
       <div className="pb-20 text-center">
-        <p className="text-6xl pb-8 font-bold text-[#1e1e1e]">
+        <p className="text-6xl pb-4 font-bold text-[#1e1e1e]">
           We are <span className="text-main">saving</span>
         </p>
         <div className="flex flex-col justify-center">
@@ -33,7 +33,7 @@ const Counter = () => {
             <AnimatedNumbers
               animateToNumber={livesSaved}
               fontStyle={{
-                fontSize: 40,
+                fontSize: 32,
                 color: "#f7a43e",
                 fontWeight: "800",
               }}
@@ -48,7 +48,7 @@ const Counter = () => {
               <AnimatedNumbers
                 animateToNumber={money}
                 fontStyle={{
-                  fontSize: 40,
+                  fontSize: 32,
                   color: "#f7a43e",
                   fontWeight: "800",
                 }}
@@ -64,7 +64,7 @@ const Counter = () => {
       <div className="">
         <iframe
           width="480"
-          height="300"
+          height="250"
           src={youtubeEmbedUrl}
           title="YouTube video player"
           frameBorder="0"
