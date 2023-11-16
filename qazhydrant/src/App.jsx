@@ -12,20 +12,22 @@ import Statistics from "./components/Statistics";
 
 function App() {
   return (
-    <div className="flex flex-col min-h-screen">
-      <div className="relative h-auto md:h-screen">
+    <div className="flex flex-col h-[980px]">
+      <div className="relative md:h-1/2 h-1/2">
+        {" "}
+        {/* Adjust the height here */}
         <video
           autoPlay
           loop
           muted
-          className="absolute w-full h-full object-cover"
+          className="relative w-full h-full object-cover"
         >
           <source src="/videos/hero-video.mp4" type="video/mp4" />
         </video>
         <img
           src="/graphic/overlay.png"
           alt="Overlay"
-          className="absolute flag bottom-0 w-full"
+          className="absolute bottom-0 w-full"
         />
         <Header />
         <Hero />

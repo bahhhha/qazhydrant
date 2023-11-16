@@ -1,11 +1,11 @@
 const Header = () => {
   return (
     <div
-      className="flex flex-wrap justify-around items-center w-full max-w-2xl m-auto py-6 px-4"
+      className="flex flex-wrap justify-around items-center w-full m-auto py-6 px-4"
       id="header"
     >
       <div className="flex items-center justify-center w-full sm:w-auto">
-        <img src="/graphic/logo.png" className="h-10" />
+        <img src="/graphic/logo.png" className="h-20" />
       </div>
 
       <div className="flex justify-center items-center w-full sm:w-auto sm:flex-nowrap gap-4 sm:gap-16 text-white mt-4 sm:mt-0">

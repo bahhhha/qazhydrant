@@ -41,3 +41,22 @@ body {
   z-index: 10; /* Ensures the image overlay is above the video */
   width: 100%; /* Ensures the image spans the full width of the container */
 }
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #f7a43e;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #f7a43e;
+}
