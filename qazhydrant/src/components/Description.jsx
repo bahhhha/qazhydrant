@@ -16,7 +16,7 @@ const Description = () => {
           <p className="text-center text-xs sm:text-sm font-regular tracking-wider uppercase">
             Finalist of
           </p>
-          <div className="flex flex-wrap justify-around items-center mt-2">
+          <div className="flex flex-wrap justify-center space-x-16 items-center mt-2">
             <img src="graphic/sft.png" className="w-20 sm:w-32 lg:w-64 my-2" />
             <img src="graphic/hub.jpg" className="w-16 sm:w-24 lg:w-48 my-2" />
           </div>
