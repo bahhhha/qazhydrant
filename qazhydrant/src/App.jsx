@@ -9,10 +9,11 @@ import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Counter from "./components/Counter";
 import Statistics from "./components/Statistics";
-
+import Achievements from "./components/Achievements";
+import Media from "./components/Media";
 function App() {
   return (
-    <div className="flex flex-col h-[980px]">
+    <div className="flex flex-col max-w-screen md:h-[980px]">
       <div className="relative md:h-1/2 h-1/2">
         {" "}
         {/* Adjust the height here */}
@@ -21,9 +22,9 @@ function App() {
           loop
           muted
           poster="images/poster.png"
-          className="relative w-full h-full object-cover"
+          className="relative w-screen md:w-full h-full object-cover"
         >
-          <source src="/videos/hero-video.webm" type="video/mp4" />
+          <source src="/videos/hero-video.mp4" type="video/mp4" />
         </video>
         <img
           src="/graphic/overlay.png"
@@ -37,9 +38,14 @@ function App() {
       <Statistics />
       <Description />
       <Traits />
-      <Usage />
+      <div className="achievebg">
+        <Usage />
+        <Achievements />
+      </div>
       <About />
+      <Media />
       <Contact />
+
       <Footer />
     </div>
   );

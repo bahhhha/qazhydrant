@@ -23,9 +23,9 @@ const Counter = () => {
   };
 
   return (
-    <div className="flex justify-center z-20 counterbg pb-12 space-x-16 ">
+    <div className="flex md:flex-row flex-col items-center justify-center counterbg pb-12  md:space-x-16 ">
       <div className="pb-20 text-center">
-        <p className="text-6xl pb-4 font-bold text-[#1e1e1e]">
+        <p className="md:text-6xl text-4xl pb-4 font-bold text-[#1e1e1e]">
           We are <span className="text-main">saving</span>
         </p>
         <div className="flex flex-col justify-center">
@@ -61,8 +61,16 @@ const Counter = () => {
           </div>
         </div>
       </div>
-      <div className="">
-        <iframe width="480" height="250" src={youtubeEmbedUrl}></iframe>
+      <div className="scale-75 md:scale-100">
+        <iframe
+          width="480"
+          height="250"
+          src={youtubeEmbedUrl}
+          title="YouTube video player"
+          frameBorder="0"
+          allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+        ></iframe>
       </div>{" "}
     </div>
   );

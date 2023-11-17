@@ -1,16 +1,17 @@
 const Description = () => {
   return (
     <div className="flex flex-col py-8 justify-center items-center contactbg px-4 sm:px-6 lg:px-8">
-      <p className="text-center text-4xl py-12 font-light text-[#303030]">
+      <p className="text-center md:text-4xl text-md py-12 font-light text-[#303030]">
         <span className="text-main font-bold">Simple</span> solution —{" "}
         <span className="text-main font-bold">Great</span> impact.
       </p>
 
       <img src="graphic/logo.png" className="w-32 sm:w-40 lg:w-48 py-4" />
-      <p className="  sm:text-sm lg:text-xl lg:w-[480px] text-justify px-2 sm:px-4 lg:px-0">
+      <p className=" text-center text-sm lg:text-xl lg:w-[480px] w-[240px] md:text-justify px-2 sm:px-4 lg:px-0">
         <span className="font-extrabold text-main ">QazHydrant</span> enables
-        firefighters to find the nearest hydrants by digitalizing fire hydrant
-        locations:
+        firefighters to find the nearest hydrants{" "}
+        <span className="font-bold">4 times faster</span> by digitalizing fire
+        hydrant locations:
       </p>
       <div className="w-full flex flex-col items-center my-4">
         <img
