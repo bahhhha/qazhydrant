@@ -28,7 +28,7 @@ const articles = [
 const Article = ({ article }) => {
   return (
     <div>
-      <div className="flex gap-4 contactbg rounded-full border-2 border-main border-opacity-50 drop-shadow-sm w-[960px] m-auto  justify-start items-center ">
+      <div className="flex gap-4 mediabg rounded-full border-2 border-main border-opacity-50 drop-shadow-sm w-[960px] m-auto  justify-start items-center ">
         <img
           src={article.img}
           className="md:w-24 md:h-24 object-cover rounded-full "
@@ -49,7 +49,7 @@ const Article = ({ article }) => {
 
 const Media = () => {
   return (
-    <div className="">
+    <div className="flex flex-col justify-center">
       <p className="text-center py-12 text-3xl font-bold">Media About Us</p>
       <div className="flex justify-center gap-8 flex-col">
         {articles.map((article) => {
