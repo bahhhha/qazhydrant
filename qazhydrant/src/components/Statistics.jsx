@@ -1,7 +1,10 @@
 const Statistics = () => {
   return (
-    <div className="relative  bottom-6 contactbg w-[960px] m-auto border-main border-2 rounded-xl border-opacity-30 drop-shadow-2xl text-[#3e3e3e] flex justify-center">
+    <div className="relative z-30 bottom-6 contactbg w-[960px] m-auto border-main border-2 rounded-xl border-opacity-30 drop-shadow-2xl text-[#3e3e3e] flex justify-center">
       <div className=" py-4">
+        <p className="font-bold py-5 text-3xl text-center tracking-wide">
+          A <span className="text-main">Real World</span> Problem
+        </p>
         <div className="flex justify-center gap-24 py-8">
           <div className="flex flex-col text-center ">
             <img
@@ -24,9 +27,6 @@ const Statistics = () => {
         </div>
         <div className="flex justify-center gap-24 items-center pb-10">
           <div>
-            <p className="font-bold py-5 text-3xl text-left tracking-wide">
-              A <span className="text-main">Real World</span> Problem
-            </p>
             <p className="text-justify w-[480px] ">
               In around 14 countries globally,{" "}
               <span className="font-bold">

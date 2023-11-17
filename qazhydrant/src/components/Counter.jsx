@@ -6,8 +6,8 @@ const Counter = () => {
   const [money, setMoney] = useState(2000000);
   const videoId = "aTKWjbkcGlo"; // Replace with your video ID
 
-  // Construct the YouTube embed URL with autoplay and mute parameters
-  const youtubeEmbedUrl = `https://www.youtube.com/embed/${videoId}?autoplay=1&mute=1&playlist=${videoId}&loop=1`;
+  // Plain YouTube embed URL without autoplay, mute, or loop parameters
+  const youtubeEmbedUrl = `https://www.youtube.com/embed/${videoId}`;
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -23,7 +23,7 @@ const Counter = () => {
   };
 
   return (
-    <div className="flex justify-center counterbg pb-12 space-x-16 ">
+    <div className="flex justify-center z-20 counterbg pb-12 space-x-16 ">
       <div className="pb-20 text-center">
         <p className="text-6xl pb-4 font-bold text-[#1e1e1e]">
           We are <span className="text-main">saving</span>
@@ -62,15 +62,7 @@ const Counter = () => {
         </div>
       </div>
       <div className="">
-        <iframe
-          width="480"
-          height="250"
-          src={youtubeEmbedUrl}
-          title="YouTube video player"
-          frameBorder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowFullScreen
-        ></iframe>
+        <iframe width="480" height="250" src={youtubeEmbedUrl}></iframe>
       </div>{" "}
     </div>
   );
