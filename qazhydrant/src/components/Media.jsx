@@ -8,7 +8,7 @@ const articles = [
   {
     img: "images/image2.jpg",
     link: "https://bluescreen.kz/samsung-naghradila-pobieditieliei-konkursa-startapov-solve-for-tomorrow/",
-    text: "Samsung Electornics awards Winners of 'Solve for Tomorrow' Startup Competition - BlueScreen.kz.",
+    text: "Samsung Electornics awards Winners of 'Solve for Tomorrow' Startup Competition",
     author: "BlueScreen.kz",
   },
   {
