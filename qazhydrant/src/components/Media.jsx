@@ -2,25 +2,25 @@ const articles = [
   {
     img: "images/image1.jpg",
     link: "https://www.gov.kz/memleket/entities/emer-atyrau/press/news/details/235797?lang=ru",
-    text: "High school students developed an application that will be a 'gamechanger' in fire safety system.",
+    text: "«High school students developed an application that will be a 'gamechanger' in fire safety system.»",
     author: "Government of Kazakhstan",
   },
   {
     img: "images/image2.jpg",
     link: "https://bluescreen.kz/samsung-naghradila-pobieditieliei-konkursa-startapov-solve-for-tomorrow/",
-    text: "Samsung Electornics awards Winners of 'Solve for Tomorrow' Startup Competition",
+    text: "«Samsung Electornics awards Winners of 'Solve for Tomorrow' Startup Competition»",
     author: "BlueScreen.kz",
   },
   {
     img: "images/image3.jpg",
     link: "https://pricom.kz/novosti/vse-pozhgidranty-v-telefone.html",
-    text: "All hydrants in one phone",
+    text: "«All hydrants in one phone»",
     author: "Pricom.kz",
   },
   {
     img: "images/image4.jpg",
     link: "https://news.samsung.com/kz_ru/samsung-awarded-winners-of-solve-for-tomorrow-contest-in-almaty",
-    text: "Samsung recognized the victors of the Solve for Tomorrow startup contest held in Almaty",
+    text: "«Samsung recognized the victors of the Solve for Tomorrow startup contest held in Almaty»",
     author: "Samsung",
   },
 ];
