@@ -27,20 +27,21 @@ const articles = [
 
 const Article = ({ article }) => {
   return (
-    <div>
-      <div className="flex gap-4 mediabg rounded-full border-2 border-main border-opacity-50 drop-shadow-sm w-[960px] m-auto  justify-start items-center ">
-        <img
-          src={article.img}
-          className="md:w-36 md:h-36 object-cover rounded-full "
-        ></img>
-        <div className="w-full text-left flex flex-col justify-start">
-          <a
-            href={article.link}
-            className=" text-main font-semibold hover:text-[#bf7c2a] duration-150"
-          >
-            {article.text}
-          </a>
-          <div className="text-left py-2">{article.author}</div>
+    <div className="flex gap-4  mediabg rounded-full border-2 border-main border-opacity-50 drop-shadow-sm md:w-[800px] w-full mx-auto justify-start items-center ">
+      <img
+        src={article.img}
+        className="w-24 h-24 md:w-36 md:h-36 object-cover rounded-full"
+        alt="Article"
+      />
+      <div className="flex-1 mr-3 text-left flex flex-col justify-start">
+        <a
+          href={article.link}
+          className="text-main font-semibold hover:text-[#bf7c2a] duration-150 text-xs md:text-base"
+        >
+          {article.text}
+        </a>
+        <div className="text-left py-2 text-xs md:text-sm">
+          {article.author}
         </div>
       </div>
     </div>
@@ -49,9 +50,11 @@ const Article = ({ article }) => {
 
 const Media = () => {
   return (
-    <div className="flex flex-col justify-center">
-      <p className="text-center py-12 text-3xl font-bold">Media About Us</p>
-      <div className="flex justify-center gap-8 flex-col">
+    <div className="flex flex-col justify-center items-center px-4">
+      <p className="text-center py-12 text-2xl md:text-3xl font-bold">
+        Media About Us
+      </p>
+      <div className="w-full flex flex-col gap-8">
         {articles.map((article) => {
           return <Article article={article} key={article.link} />;
         })}

@@ -11,9 +11,15 @@ const achievements = [
 
 const Achievement = ({ achievement }) => {
   return (
-    <div className="flex flex-col gap-16 justify-center group hover:bg-main border-main border-2 p-4 px-8 rounded-2xl shadow-xl contactbg items-center h-full">
-      <img src={achievement.src} className="w-48" />
-      <p className="w-80 text-sm leading-7 text-justify">{achievement.desc}</p>
+    <div className="flex flex-col md:h-[600px] gap-4 md:gap-8 justify-center group hover:bg-main border-main border-2 p-4 md:px-8 rounded-2xl shadow-xl contactbg items-center h-full">
+      <img
+        src={achievement.src}
+        alt="Achievement"
+        className="w-32 md:w-48 lg:w-64 xl:w-72"
+      />
+      <p className="w-64 md:w-80 lg:w-96 text-sm md:text-base leading-7 text-justify">
+        {achievement.desc}
+      </p>
     </div>
   );
 };
@@ -21,13 +27,13 @@ const Achievement = ({ achievement }) => {
 const Achievements = () => {
   return (
     <div className="text-[#3e3e3e] py-8 ">
-      <p className="text-center text-black font-bold text-xl md:text-4xl py-8 ">
+      <p className="text-center text-black font-bold text-xl md:text-4xl py-8">
         Achievements
       </p>
 
-      <div className="flex flex-col py-8 gap-24 items-center h-[580px] justify-center md:flex-row">
-        {achievements.map((achievement) => {
-          return <Achievement achievement={achievement} />;
+      <div className="flex flex-col py-8 gap-8 md:gap-16 items-center md:h-auto justify-center md:flex-row">
+        {achievements.map((achievement, index) => {
+          return <Achievement achievement={achievement} key={index} />;
         })}
       </div>
     </div>
