@@ -4,7 +4,7 @@ import AnimatedNumbers from "react-animated-numbers";
 const Counter = () => {
   const [livesSaved, setLivesSaved] = useState(1000);
   const [money, setMoney] = useState(2000000);
-  const videoId = "aTKWjbkcGlo"; // Replace with your video ID
+  const videoId = "LIVm3x8nlfI"; // Replace with your video ID
 
   // Plain YouTube embed URL without autoplay, mute, or loop parameters
   const youtubeEmbedUrl = `https://www.youtube.com/embed/${videoId}`;
